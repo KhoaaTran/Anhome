@@ -81,7 +81,7 @@ button {
 .fixed {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 10px;
 }
 
 .fixed__list {
@@ -91,7 +91,7 @@ button {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.fixed img {
+.fixed__list img {
     width: 30px;
     height: 30px;
     object-fit: cover;

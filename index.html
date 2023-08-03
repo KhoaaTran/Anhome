@@ -58,18 +58,17 @@
                         <li class="header__item">
                             <a href="#!" class="header__link">Phòng trọ</a>
                         </li>
-                        <li class="header__item">
-                            <a href="#!" class="header__link"
-                                >CHDV - Studio - Duplex</a
-                            >
-                        </li>
-                        <li class="header__item">
-                            <a href="#!" class="header__link"
-                                >Nhà nguyên căn - Mặt bằng</a
-                            >
-                        </li>
+
                         <li class="header__item">
                             <a href="#!" class="header__link">Thông tin</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Liên hệ</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Tuyển dụng</a>
                         </li>
                     </ul>
 
@@ -91,7 +90,11 @@
 
             <div class="menu-drawer">
                 <a href="#">
-                    <img class="logo"  src="./assets/icons/logo.png" alt="Safe Tour." />
+                    <img
+                        class="logo"
+                        src="./assets/icons/logo.png"
+                        alt="Safe Tour."
+                    />
                 </a>
 
                 <ul class="mobile-nav" id="mobile-nav"></ul>
@@ -105,83 +108,67 @@
         </header>
 
         <main class="main">
-            <div class="hero">
-                <img
-                    class="hero__img"
-                    src="./assets/images/background/5.svg"
-                    alt="background"
-                />
+            <div class="fixed">
+                <ul class="fixed__list">
+                    <li class="fixed__item">
+                        <a href="https://www.facebook.com/CanhodichvuAnHome"
+                            ><img
+                                src="https://anhomegroup.vn/wp-content/uploads/2023/07/facebook.png"
+                        /></a>
+                    </li>
+                    <li class="fixed__item">
+                        <a href="https://www.youtube.com/@AnHomeGroup"
+                            ><img
+                                src="https://anhomegroup.vn/wp-content/uploads/2023/07/youtube-1.png"
+                        /></a>
+                    </li>
+                    <li class="fixed__item">
+                        <a href="https://zalo.me/2804560942133374262"
+                            ><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+                        /></a>
+                    </li>
+                    <li class="fixed__item">
+                        <a href="https://www.tiktok.com/@anhomegroup"
+                            ><img
+                                src="https://anhomegroup.vn/wp-content/uploads/2023/07/tiktok.jpg"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="hero__inner">
-                    <h1 class="hero__heading">Thuê phòng trọ, tìm Anhome</h1>
-
-                    <form class="hero__form" action="">
+            <div class="container">
+                <div class="filter">
+                    <form class="filter__form" action="">
                         <input
-                            class="hero__form-item hero__input"
+                            class="filter__form-item filter__input"
                             type="text"
-                            placeholder="Nhập từ khóa, tên đường, quận, phường"
+                            placeholder="Nhập tìm kiếm"
                         />
 
-                        <select class="hero__form-item hero__select">
+                        <select class="filter__form-item filter__select">
                             <option value="Loại hình">Loại hình</option>
-                            <option value="Ký túc xá">Ký túc xá</option>
                         </select>
 
-                        <select class="hero__form-item hero__select">
+                        <select class="filter__form-item filter__select">
                             <option value="Mức giá">Mức giá</option>
                         </select>
 
-                        <select class="hero__form-item hero__select">
+                        <select class="filter__form-item filter__select">
                             <option value="Quận huyện">Quận huyện</option>
                         </select>
 
-                        <select class="hero__form-item hero__select">
-                            <option value="Tình trạng">Tình trạng</option>
-                        </select>
-
                         <button
-                            class="hero__form-item btn hero__search"
+                            class="filter__form-item btn filter__search"
                             type="submit"
                         >
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <span class="hero__search-text">Tìm kiếm</span>
+                            <span class="filter__search-text">Tìm kiếm</span>
                         </button>
                     </form>
                 </div>
             </div>
-
-            <figure class="turtorial">
-                <div class="container">
-                    <div class="turtorial__inner">
-                        <div class="youtube-vd">
-                            <iframe
-                                class="responsive-iframe"
-                                src="https://www.youtube.com/embed/hHSL_WgmL8k"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="turtorial__left">
-                            <h2 class="turtorial__heading">
-                                HƯỚNG DẪN ĐẶT LỊCH XEM PHÒNG
-                            </h2>
-                            <p class="turtorial__desc">
-                                Bạn đang loay hoay tìm kiếm một căn phòng trọ
-                                ưng ý ? Bạn lo lắng các vấn đề về tiền cọc phòng
-                                ? Đừng lo Anhome sẽ đáp ứng tất cả các nhu cầu
-                                của bạn, với chương trình
-                                <span class="turtorial__desc-highlight"
-                                    >Tài trợ cọc</span
-                                >
-                                duy nhất trên thị trường dáp ứng được đầy đủ nhu
-                                cầu của bạn.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </figure>
 
             <figure class="room">
                 <div class="container">
@@ -654,6 +641,165 @@
                                 <p>Đặt lịch xem</p>
                             </button>
                         </article>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="turtorial">
+                <div class="container">
+                    <div class="turtorial__inner">
+                        <div class="tutorial__left">
+                            <h3 class="turtorial__heading">
+                                Có thể bạn quan tâm
+                            </h3>
+                            <p class="turtorial__desc">
+                                Thông tin cần thiết khi tìm nhà trọ
+                            </p>
+                            <div class="turtorial-vd">
+                                <iframe
+                                    class="turtorial-iframe"
+                                    src="https://www.youtube.com/embed/hHSL_WgmL8k"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="turtorial__right">
+                            <div class="turtorial__list">
+                                <article class="turtorial__item">
+                                    <img
+                                        class="turtorial__img"
+                                        src="./assets/images/room/room1.jpg"
+                                        alt=""
+                                    />
+                                    <div class="turtorial__overview">
+                                        <h4 class="turtorial__overview-desc">
+                                            Nàng thơ xứ trọ - vẻ đẹp hiện hữu
+                                            trong từng góc xanh
+                                        </h4>
+                                        <div class="turtorial__overview-info">
+                                            <span
+                                                class="turtorial__overview-date"
+                                                >10/07/2023
+                                            </span>
+                                            <div
+                                                class="turtorial__overview-view"
+                                            >
+                                                <i
+                                                    class="turtorial__overview-icon fa-solid fa-eye"
+                                                ></i>
+                                                <span
+                                                    class="turtorial__overview-number"
+                                                    >123</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="turtorial__item">
+                                    <img
+                                        class="turtorial__img"
+                                        src="./assets/images/room/room5.jpg"
+                                        alt=""
+                                    />
+                                    <div class="turtorial__overview">
+                                        <h4 class="turtorial__overview-desc">
+                                            Nàng thơ xứ trọ - vẻ đẹp hiện hữu
+                                            trong từng góc xanh
+                                        </h4>
+                                        <div class="turtorial__overview-info">
+                                            <span
+                                                class="turtorial__overview-date"
+                                                >10/07/2023
+                                            </span>
+                                            <div
+                                                class="turtorial__overview-view"
+                                            >
+                                                <i
+                                                    class="turtorial__overview-icon fa-solid fa-eye"
+                                                ></i>
+                                                <span
+                                                    class="turtorial__overview-number"
+                                                    >123</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="turtorial__item">
+                                    <img
+                                        class="turtorial__img"
+                                        src="./assets/images/room/room3.jpg"
+                                        alt=""
+                                    />
+                                    <div class="turtorial__overview">
+                                        <h4 class="turtorial__overview-desc">
+                                            Tưng bừng khai trương tháng 8 chào
+                                            đón tân sinh viên nhập học năm học
+                                            2023-2024
+                                        </h4>
+                                        <div class="turtorial__overview-info">
+                                            <span
+                                                class="turtorial__overview-date"
+                                                >10/07/2023
+                                            </span>
+                                            <div
+                                                class="turtorial__overview-view"
+                                            >
+                                                <i
+                                                    class="turtorial__overview-icon fa-solid fa-eye"
+                                                ></i>
+                                                <span
+                                                    class="turtorial__overview-number"
+                                                    >123</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="turtorial__item">
+                                    <img
+                                        class="turtorial__img"
+                                        src="./assets/images/room/room3.jpg"
+                                        alt=""
+                                    />
+                                    <div class="turtorial__overview">
+                                        <h4 class="turtorial__overview-desc">
+                                            Nàng thơ xứ trọ - vẻ đẹp hiện hữu
+                                            trong từng góc xanh
+                                        </h4>
+                                        <div class="turtorial__overview-info">
+                                            <span
+                                                class="turtorial__overview-date"
+                                                >10/07/2023
+                                            </span>
+                                            <div
+                                                class="turtorial__overview-view"
+                                            >
+                                                <i
+                                                    class="turtorial__overview-icon fa-solid fa-eye"
+                                                ></i>
+                                                <span
+                                                    class="turtorial__overview-number"
+                                                    >123</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="turtorial__more-wrap">
+                                <a href="#!" class="turtorial__more"
+                                    >Xem bài tin khác</a
+                                >
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </figure>

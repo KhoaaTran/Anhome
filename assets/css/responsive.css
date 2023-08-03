@@ -58,45 +58,26 @@
         transform: translateX(0);
     }
 
-    /* Hero */
-    .hero {
-        height: initial;
+    /* Header */
+    .header__link {
+        color: #333;
     }
 
-    .hero__img {
-        height: 155px;
-        width: 100%;
-    }
-
-    .hero__inner {
-        position: static;
-        transform: none;
-    }
-
-    .hero__heading {
-        color: #004aad;
+    /* Filter */
+    .filter {
         margin-top: 20px;
-        line-height: 1.5;
     }
 
-    .hero__form {
+    .filter__form {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 20px;
     }
 
-    .hero__input:first-child {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .hero__select {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .hero__search {
-        align-self: flex-start;
+    .filter__select {
+        width: 300px;
+        height: 40px;
     }
 
     /* Turtorial */
@@ -105,6 +86,10 @@
     }
 
     .turtorial__heading {
+        margin-top: 30px;
+    }
+
+    .turtorial__right {
         margin-top: 30px;
     }
 

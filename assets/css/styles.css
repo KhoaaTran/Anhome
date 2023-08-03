@@ -77,10 +77,6 @@ button {
     color: #fff;
 }
 
-.main {
-    background: #fffaf5;
-}
-
 /* Fixed */
 .fixed {
     position: fixed;
@@ -114,6 +110,7 @@ button {
     padding: 15px 20px;
     width: 1160px;
     border-radius: 8px;
+    margin-top: 30px;
 }
 
 .filter__input {
@@ -121,6 +118,11 @@ button {
     height: 40px;
     padding: 0 10px;
     outline: none;
+}
+
+.filter__form-item {
+    border-radius: 10px;
+    border: 1px solid #000;
 }
 
 .filter_search-text {
@@ -259,6 +261,17 @@ button {
     display: grid;
     gap: 40px 20px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.room__item {
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.room__item:hover {
+    scale: 1.01;
 }
 
 .room__item-img-wrap {

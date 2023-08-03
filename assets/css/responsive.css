@@ -96,6 +96,11 @@
     /* Room */
     .room__list {
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .room__item-rows {
+        flex-direction: column;
     }
 
     /* Footer */

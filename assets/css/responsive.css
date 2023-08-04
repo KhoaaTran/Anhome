@@ -61,6 +61,7 @@
     /* Header */
     .header__link {
         color: #333;
+        font-weight: 600;
     }
 
     /* Fixed */
@@ -77,7 +78,7 @@
 
     .filter__form {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         row-gap: 20px;
     }
@@ -85,6 +86,10 @@
     .filter__select {
         width: 300px;
         height: 40px;
+    }
+
+    .filter__input {
+        width: 100%;
     }
 
     /* Turtorial */
@@ -108,6 +113,14 @@
 
     .room__item-rows {
         flex-direction: column;
+    }
+
+    .room__heading:nth-child(2) {
+        color: #febb02;
+    }
+
+    .room__heading {
+        font-size: 2.2rem;
     }
 
     /* Footer */

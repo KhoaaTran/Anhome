@@ -31,13 +31,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="#">
-                        <img
-                            class="logo"
-                            src="./assets/icons/logo.png"
-                            alt="Anhome Group"
-                        />
-                    </a>
+                    <a class="header__link-logo" href="#"> Anhome Group </a>
 
                     <label for="menu-checkbox" class="toggle-menu">
                         <svg
@@ -72,7 +66,7 @@
                         </li>
                     </ul>
 
-                    <a href="#!" class="btn btn__contact show-on-pc">Liên hệ</a>
+                    <!-- <a href="#!" class="btn btn__contact show-on-pc">Liên hệ</a> -->
                 </div>
             </div>
         </header>
@@ -176,17 +170,27 @@
 
             <figure class="room">
                 <div class="container">
-                    <h2 class="room__heading">PHÒNG GIÁ TỐT DÀNH CHO BẠN</h2>
+                    <div class="room__heading-wrap">
+                        <h1 class="room__heading">ANHOME - PHÒNG TRỌ & CHDV DÀNH CHO MỌI NGƯỜI</h1>
+                        <h2 class="room__heading">
+                            Ở AN - LÀM PHÁT
+                        </h2>
+                        <p class="room__heading-desc">
+                            Kênh phòng trọ rộng khắp TPHCM, phòng trống được cập nhật realtime
+                        </p>
+                    </div>
+                </div>
+                <div class="container container-room">
                     <div class="room__sort">
-                        <p class="room__sort-desc">Sắp xếp:</p>
+                        <p class="room__sort-title">Sắp xếp:</p>
+
+                        <a href="#!" class="room__sort-item room__sort-desc"
+                            >Mới nhất</a
+                        >
 
                         <a
                             href="#!"
                             class="room__sort-item room__sort-item-active room__sort-desc"
-                            >Mới nhất</a
-                        >
-
-                        <a href="#!" class="room__sort-item room__sort-desc"
                             >Giá cao nhất</a
                         >
 
@@ -229,8 +233,8 @@
                             </div>
 
                             <button class="row__item-btn">
-                                <p>6.5 triệu / tháng</p>
-                                <p>Đặt lịch xem</p>
+                                <p class="row__item-btn-desc">6.5 triệu / tháng</p>
+                                <p class="row__item-btn-desc">Đặt lịch xem</p>
                             </button>
                         </article>
 
@@ -268,8 +272,8 @@
                             </div>
 
                             <button class="row__item-btn">
-                                <p>4.8 triệu / tháng</p>
-                                <p>Đặt lịch xem</p>
+                                <p class="row__item-btn-desc">6.5 triệu / tháng</p>
+                                <p class="row__item-btn-desc">Đặt lịch xem</p>
                             </button>
                         </article>
 

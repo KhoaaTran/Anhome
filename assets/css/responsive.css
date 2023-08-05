@@ -11,51 +11,59 @@
     }
 
     /* Menu */
+    .toggle-menu {
+        padding-top: 10px;
+    }
+
     .toggle-menu svg {
         color: #666;
         width: 24px;
     }
 
-    .menu-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.3);
-        z-index: 1;
-        visibility: hidden;
+    .menu-wrapper {
+        position: relative;
     }
 
-    .menu-drawer {
-        position: fixed;
-        inset: 0 40% 0 0;
+    .header__link {
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+    .menu-inner {
+        position: absolute;
+        top: 40px;
+        right: -8px;
+        min-width: 250px;
+        padding: 10px;
+        border-radius: 3px;
+        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
         background: #fff;
-        z-index: 2;
-        transform: translateX(-100%);
-        transition: 0.5s ease;
-        padding: 40px;
+        transform-origin: 93% top;
+        scale: 0;
+        transition: 0.4s;
+        z-index: 1;
     }
 
-    .mobile-nav {
-        margin-top: 20px;
+    .menu-inner::before {
+        content: "";
+        position: absolute;
+        top: -18px;
+        right: 8px;
+        border: 10px solid;
+        border-color: transparent transparent #fff;
     }
 
-    .navbar__link {
-        color: #333;
-        display: block;
-        padding: 14px 0;
-        font-weight: 500;
+    .header__item:not(:last-child) {
+        border-bottom: 1px solid #ccc;
     }
 
-    .navbar__link:hover::after {
-        bottom: 0;
-        left: 0;
+    .menu-checkbox:checked ~ .menu-inner {
+        scale: 1;
     }
 
-    .menu-checkbox:checked + .menu-overlay {
-        visibility: visible;
-    }
-
-    .menu-checkbox:checked ~ .menu-drawer {
-        transform: translateX(0);
+    .pop-up-img {
+        width: 80%;
+        object-fit: cover;
     }
 
     /* Header */
@@ -88,7 +96,22 @@
         height: 40px;
     }
 
+    .filter__form-item,
     .filter__input {
+        width: 100%;
+    }
+
+    /* IMG container */
+    .room__img-wrap {
+        flex: 1 0 100%;
+    }
+
+    .btn-next {
+        right: 0;
+    }
+
+    /* Left */
+    .info__left {
         width: 100%;
     }
 

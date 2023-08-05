@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Styles.css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Styles.css -->
+        <link rel="stylesheet" href="./assets/css/room.css" />
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- Script -->
+        <script defer src="./script.js"></script>
+        <title>An home</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a class="header__link-logo" href="index.html">
+                        Anhome Group
+                    </a>
+
+                    <ul id="navbar" class="navbar show-on-pc">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Trang chủ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Phòng trọ</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Thông tin</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Liên hệ</a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Tuyển dụng</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu-wrapper hide-on-pc">
+                        <label for="menu-checkbox" class="toggle-menu">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                />
+                            </svg>
+                        </label>
+
+                        <input
+                            hidden
+                            type="checkbox"
+                            name=""
+                            id="menu-checkbox"
+                            class="menu-checkbox"
+                        />
+
+                        <div class="menu-inner">
+                            <ul class="mobile-nav" id="mobile-nav"></ul>
+
+                            <script>
+                                const pcNav = document.querySelector("#navbar");
+                                const mobileNav =
+                                    document.querySelector("#mobile-nav");
+                                mobileNav.innerHTML = pcNav.innerHTML;
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="room">
+                <div class="container">
+                    <div class="room__img-list">
+                        <div class="room__img-container">
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room1.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room2.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room3.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room4.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room5.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+
+                            <figure class="room__img-wrap">
+                                <img
+                                    src="./assets/images/room/room6.jpg"
+                                    alt=""
+                                    class="room__img"
+                                />
+                            </figure>
+                        </div>
+                        
+                        <button class="btn-control btn-prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <button class="btn-control btn-next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__left">
+                            <div class="status-wrap">
+                                <p class="status status-available">
+                                    Có 6 phòng trống
+                                </p>
+                                <p class="status status-aT-available">
+                                    Sắp có 14 phòng trống
+                                </p>
+                            </div>
+                            <h1 class="info__heading">
+                                449/17, Đường Trường Chinh, P14, Quận Tân Bình
+                            </h1>
+
+                            <ul class="info__desc-wrap">
+                                <li class="info__desc">
+                                    330 phòng, diện tích 22m²
+                                </li>
+                                <li class="info__desc">
+                                    Giá từ:
+                                    <strong class="info__desc-highlight"
+                                        >3,5 triệu</strong
+                                    >
+                                </li>
+                            </ul>
+
+                            <div class="info__room">
+                                <p class="room-desc">Danh sách phòng</p>
+                                <ul class="room-list">
+                                    <li class="room-list-container">
+                                        <div class="room-list__top">
+                                            <div class="room-list__title">
+                                                <p class="room-list__name">
+                                                    Phòng B003 -
+                                                    <strong>4.700.000₫</strong>
+                                                </p>
+                                                <p class="room-list__status">
+                                                    (Có phòng)
+                                                </p>
+                                            </div>
+
+                                            <div class="room-list__open">
+                                                <p>Xem</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-list__bottom">
+                                            <div class="room-list__bottom-item">
+                                                <p>Điện</p>
+                                                <strong>3.800₫</strong>
+                                                <p>KWh</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Gửi xe</p>
+                                                <strong>120.000₫</strong>
+                                                <p>Xe</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Nước (Kcđh)</p>
+                                                <strong>80.000₫</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Số người ở</p>
+                                                <strong>3</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Wifi</p>
+                                                <strong>Free</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="room-list-container">
+                                        <div class="room-list__top">
+                                            <div class="room-list__title">
+                                                <p class="room-list__name">
+                                                    Phòng B003 -
+                                                    <strong>4.700.000₫</strong>
+                                                </p>
+                                                <p class="room-list__status">
+                                                    (Có phòng)
+                                                </p>
+                                            </div>
+
+                                            <div class="room-list__open">
+                                                <p>Xem</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-list__bottom">
+                                            <div class="room-list__bottom-item">
+                                                <p>Điện</p>
+                                                <strong>3.800₫</strong>
+                                                <p>KWh</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Gửi xe</p>
+                                                <strong>120.000₫</strong>
+                                                <p>Xe</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Nước (Kcđh)</p>
+                                                <strong>80.000₫</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Số người ở</p>
+                                                <strong>3</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Wifi</p>
+                                                <strong>Free</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="room-list-container">
+                                        <div class="room-list__top">
+                                            <div class="room-list__title">
+                                                <p class="room-list__name">
+                                                    Phòng B003 -
+                                                    <strong>4.700.000₫</strong>
+                                                </p>
+                                                <p class="room-list__status">
+                                                    (Có phòng)
+                                                </p>
+                                            </div>
+
+                                            <div class="room-list__open">
+                                                <p>Xem</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-list__bottom">
+                                            <div class="room-list__bottom-item">
+                                                <p>Điện</p>
+                                                <strong>3.800₫</strong>
+                                                <p>KWh</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Gửi xe</p>
+                                                <strong>120.000₫</strong>
+                                                <p>Xe</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Nước (Kcđh)</p>
+                                                <strong>80.000₫</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Số người ở</p>
+                                                <strong>3</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Wifi</p>
+                                                <strong>Free</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="room-list-container">
+                                        <div class="room-list__top">
+                                            <div class="room-list__title">
+                                                <p class="room-list__name">
+                                                    Phòng B003 -
+                                                    <strong>4.700.000₫</strong>
+                                                </p>
+                                                <p class="room-list__status">
+                                                    (Có phòng)
+                                                </p>
+                                            </div>
+
+                                            <div class="room-list__open">
+                                                <p>Xem</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-list__bottom">
+                                            <div class="room-list__bottom-item">
+                                                <p>Điện</p>
+                                                <strong>3.800₫</strong>
+                                                <p>KWh</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Gửi xe</p>
+                                                <strong>120.000₫</strong>
+                                                <p>Xe</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Nước (Kcđh)</p>
+                                                <strong>80.000₫</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Số người ở</p>
+                                                <strong>3</strong>
+                                                <p>Người</p>
+                                            </div>
+
+                                            <div class="room-list__bottom-item">
+                                                <p>Wifi</p>
+                                                <strong>Free</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info__right show-on-pc">
+                            <div class="utility">
+                                <h2 class="utility__heading">
+                                    Tiện ích khu trọ
+                                </h2>
+                                <ul class="utility__list">
+                                    <li class="utility-item">
+                                        Khóa cổng vân tay
+                                    </li>
+                                    <li class="utility-item">Camera an ninh</li>
+                                    <li class="utility-item">
+                                        Nước uống miễn phí
+                                    </li>
+                                    <li class="utility-item">
+                                        Wifi tốc độ cao
+                                    </li>
+                                    <li class="utility-item">
+                                        Cây xanh, ghế đá
+                                    </li>
+                                    <li class="utility-item">
+                                        Chỗ phơi quần áo
+                                    </li>
+                                    <li class="utility-item">
+                                        Máy giặt trả tiền
+                                    </li>
+                                    <li class="utility-item">
+                                        Vệ sinh hàng ngày
+                                    </li>
+                                    <li class="utility-item">
+                                        N.viên trực 24/7
+                                    </li>
+                                    <li class="utility-item">
+                                        Kệ giày hành lang
+                                    </li>
+                                    <li class="utility-item">Chỗ đậu xe máy</li>
+                                    <li class="utility-item">Sửa chữa nhanh</li>
+                                    <li class="utility-item">Hỗ trợ khóa xe</li>
+                                    <li class="utility-item">
+                                        Cấp sáng đầy đủ
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contact">
+                                <div class="holine">
+                                    <p class="hotline__desc">
+                                        Liên hệ thuê phòng
+                                    </p>
+                                    <p class="hotline__number">0938022166</p>
+                                </div>
+
+                                <div class="media">
+                                    <ul class="media__list">
+                                        <li class="media__item">
+                                            <a
+                                                href="https://www.youtube.com/@AnHomeGroup"
+                                                ><img
+                                                    src="./assets//icons/mess.png"
+                                            /></a>
+                                        </li>
+
+                                        <li class="media__item">
+                                            <a
+                                                href="https://zalo.me/2804560942133374262"
+                                                ><img
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+                                            /></a>
+                                        </li>
+                                        <li class="media__item">
+                                            <a
+                                                href="https://www.tiktok.com/@anhomegroup"
+                                                ><img
+                                                    src="https://anhomegroup.vn/wp-content/uploads/2023/07/tiktok.jpg"
+                                                />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
+                        <img
+                            class="logo"
+                            src="./assets/icons/logo.png"
+                            alt=""
+                        />
+                        <div class="footer__info">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p class="footer__location-desc">
+                                22 đường số 37, P. Tân Phong, Q7, Tp.HCM
+                            </p>
+                        </div>
+
+                        <div class="footer__info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="footer__location-desc">
+                                anhome.taitrococ@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Liên hệ với chúng tôi</h3>
+
+                        <ul class="footer__social">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/CanhodichvuAnHome"
+                                    ><img
+                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/facebook.png"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@AnHomeGroup"
+                                    ><img
+                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/youtube-1.png"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="https://zalo.me/2804560942133374262"
+                                    ><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@anhomegroup"
+                                    ><img
+                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/tiktok.jpg"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Hướng dẫn</h3>
+                        <ul class="footer__list-link">
+                            <li class="footer__link-wrap">
+                                <a href="#!">Trang chủ</a>
+                            </li>
+                            <li class="footer__link-wrap">
+                                <a href="#!">Về AnHome</a>
+                            </li>
+                            <li class="footer__link-wrap">
+                                <a href="#!">Thông tin hữu ích</a>
+                            </li>
+                            <li class="footer__link-wrap">
+                                <a href="#!">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Bản đồ</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1003509.3493643086!2d106.711527!3d10.73769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9b33053ec3%3A0x59e19c7585923791!2zMjIgxJDGsOG7nW5nIHPhu5EgMzcsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1690979811008!5m2!1svi!2sus"
+                            width="300"
+                            height="200"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+
+                <p class="footer__copyright">Copyright 2023 © ANHOMEGROUP</p>
+            </div>
+        </footer>
+    </body>
+</html>

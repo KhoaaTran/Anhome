@@ -8,7 +8,6 @@ html {
 
 body {
     font-size: 1.6rem;
-    /* font-family: "Poppins", sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,17 +38,56 @@ button {
 .btn {
     padding: 16px 30px;
     border-radius: 8px;
-    background: #00468B;
-    border-color: #00468B;
+    background: #00468b;
+    border-color: #00468b;
     color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.14;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
+/* Pop-up */
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.pop-up-img-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pop-up-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.pop-up-checkbox:checked + .overlay {
+    visibility: hidden;
+}
+
+.pop-up-icon {
+    position: relative;
+    top: -30px;
+    right: -10px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
-    background: #00468B;
+    background: #00468b;
 }
 
 .header__wrapper {
@@ -75,6 +113,7 @@ button {
     font-size: 1.4rem;
     color: #fff;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .header__link-logo {
@@ -102,6 +141,7 @@ button {
     position: fixed;
     bottom: 30px;
     right: 10px;
+    z-index: 1;
 }
 
 .fixed__list {
@@ -139,14 +179,16 @@ button {
     white-space: nowrap;
 }
 
+.filter__input {
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .filter__form-item {
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #000;
-}
-
-.filter__input {
-    width: 400px;
 }
 
 .filter__select {
@@ -163,7 +205,7 @@ button {
     padding: 15px 20px;
     outline: none;
     border: none;
-    background: #00468B;
+    background: #00468b;
 }
 
 /* Tutorial */
@@ -279,7 +321,7 @@ button {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #00468B;
+    color: #00468b;
 }
 
 .room__sort-title {
@@ -308,7 +350,7 @@ button {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
-  
+
     color: #000;
 }
 
@@ -346,11 +388,11 @@ button {
 }
 
 .room__sort {
-    display: inline-flex;
-    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
     margin-bottom: 10px;
-    flex-wrap: nowrap;
     padding: 10px;
     border-radius: 5px;
 }
@@ -367,17 +409,21 @@ button {
 }
 
 .row__item-btn {
-    margin-top: 20px;
-    border-radius: 5px;
-    background: #00468B;
-    border: 1px solid #31c3e0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #00468b;
+    border: 1px solid #31c3e0;
+    width: 100%;
 }
 
 .row__item-btn-desc {
     color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 .row__item-btn:hover {

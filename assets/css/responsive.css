@@ -4,10 +4,23 @@
     }
 }
 
+/* Tablet and Mobie */
 @media screen and (max-width: 991px) {
     /* Common */
     .show-on-pc {
         display: none;
+    }
+
+    .contact-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    /* Header */
+    .header__link {
+        color: #333;
+        font-weight: 600;
     }
 
     /* Menu */
@@ -16,7 +29,7 @@
     }
 
     .toggle-menu svg {
-        color: #666;
+        color: #ccc;
         width: 24px;
     }
 
@@ -41,7 +54,7 @@
         transform-origin: 93% top;
         scale: 0;
         transition: 0.4s;
-        z-index: 1;
+        z-index: 999;
     }
 
     .menu-inner::before {
@@ -65,18 +78,41 @@
         width: 80%;
         object-fit: cover;
     }
+}
 
-    /* Header */
-    .header__link {
-        color: #333;
-        font-weight: 600;
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    /* Room */
+    .room__list {
+        grid-template-columns: repeat(2,1fr);
     }
 
-    /* Fixed */
-    .contact-img {
-        width: 40px;
-        height: 40px;
+    /* Info right */
+    .info__inner > * {
+        flex: 1;
+    }
+
+    .hotline__number {
+        font-size: 2.5rem;
+    }
+
+    .media__item img {
+        width: 36px;
+        height: 36px;
         object-fit: cover;
+    }
+
+    /* Footer */
+    .footer__row {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .hide-on-mobie {
+        display: none;
     }
 
     /* Filter */

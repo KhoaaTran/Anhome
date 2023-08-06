@@ -166,7 +166,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 14px;
     padding: 15px 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -199,10 +199,14 @@ button {
 .filter_search-text {
     font-size: 1.2rem;
     margin-left: 5px;
-    white-space: nowrap;
 }
 
 .filter__search {
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
     padding: 15px 20px;
     outline: none;
     border: none;
@@ -406,7 +410,6 @@ button {
 
 .room__sort-item-active {
     font-weight: 600;
-    /* text-decoration: underline; */
 }
 
 .row__item-btn {

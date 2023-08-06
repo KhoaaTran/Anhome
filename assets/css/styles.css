@@ -422,6 +422,7 @@ button {
 }
 
 .row__item-btn-desc {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
     color: #fff;
     padding: 10px;
     text-align: center;

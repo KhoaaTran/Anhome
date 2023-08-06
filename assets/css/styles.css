@@ -72,8 +72,12 @@ button {
     object-fit: cover;
 }
 
-.pop-up-checkbox:checked + .overlay {
+.pop-up-checkbox + .overlay {
     visibility: hidden;
+}
+
+.pop-up-checkbox:checked + .overlay {
+    visibility: visible;
 }
 
 .pop-up-icon {

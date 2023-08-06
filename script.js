@@ -1,14 +1,8 @@
 const room_list = document.querySelector(".room-list");
-const popUpCheckbox = document.getElementById("pop-up-checkbox");
 const body = document.body;
 const room_img = document.querySelectorAll(".room__img-wrap");
 
 // Disable scroll
-if (popUpCheckbox) {
-    popUpCheckbox.addEventListener("change", function () {
-        body.classList.remove("disable-scroll");
-    });
-}
 
 // Show detail room
 room_list.addEventListener("click", function (e) {
@@ -50,5 +44,3 @@ nextImgBtn.addEventListener("click", function () {
         return room;
     });
 });
-
-console.log(screen.width);

@@ -100,7 +100,7 @@
         <!-- Responsive -->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Script -->
-        <!-- <script defer src="./script.js"></script> -->
+        <script defer src="./script.js"></script>
         <title>An home</title>
     </head>
     <body class="stop-scrolling">
@@ -1061,16 +1061,6 @@
             window.onload = function () {
                 window.scrollTo(0, 0);
             };
-
-            document
-                .querySelector("#mobile-nav")
-                .addEventListener("click", function (e) {
-                    const menu_mobie = e.target.closest(".menu-inner");
-                    const menu_checkbox = menu_mobie.previousElementSibling;
-                    if (menu_checkbox) {
-                        menu_checkbox.checked = false;
-                    }
-                });
         </script>
     </body>
 </html>

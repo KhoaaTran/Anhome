@@ -53,7 +53,7 @@
         background: #fff;
         transform-origin: 93% top;
         scale: 0;
-        transition: 0.4s;
+        transition: 0.5s;
         z-index: 999;
     }
 

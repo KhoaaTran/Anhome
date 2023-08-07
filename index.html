@@ -1059,9 +1059,18 @@
             overlay.addEventListener("click", closeModal);
 
             window.onload = function () {
-                console.log('a');
                 window.scrollTo(0, 0);
             };
+
+            document
+                .querySelector("#mobile-nav")
+                .addEventListener("click", function (e) {
+                    const menu_mobie = e.target.closest(".menu-inner");
+                    const menu_checkbox = menu_mobie.previousElementSibling;
+                    if (menu_checkbox) {
+                        menu_checkbox.checked = false;
+                    }
+                });
         </script>
     </body>
 </html>

@@ -103,7 +103,7 @@
         <!-- <script defer src="./script.js"></script> -->
         <title>An home</title>
     </head>
-    <body>
+    <body class="stop-scrolling">
         <header class="header">
             <div class="container">
                 <nav class="header__wrapper">
@@ -1043,18 +1043,25 @@
         </div>
         <div class="overlay"></div>
         <script>
+            const body = document.querySelector("body");
             const popup = document.querySelector(".pop-up-wrapper");
-
             const overlay = document.querySelector(".overlay");
             const btnClosePopup = document.querySelector(".pop-up-icon");
 
+            // Close Popup
             const closeModal = function () {
                 popup.classList.add("hidden");
                 overlay.classList.add("hidden");
+                body.classList.remove("stop-scrolling");
             };
 
             btnClosePopup.addEventListener("click", closeModal);
             overlay.addEventListener("click", closeModal);
+
+            window.onload = function () {
+                console.log('a');
+                window.scrollTo(0, 0);
+            };
         </script>
     </body>
 </html>

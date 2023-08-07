@@ -1052,11 +1052,64 @@
             const room_sort = document.querySelector(".room__sort");
             const sort_items = document.querySelectorAll(".room__sort-item");
 
+            // Convert Date Object
+            function d2(n) {
+                return (n < 10 ? "0" : "") + n;
+            }
+
+            function convertDateObject(time) {
+                return `${d2(time.getDate())}/${d2(
+                    time.getMonth() + 1
+                )}/${time.getFullYear()}`;
+            }
+
+            // Set LocalStorage
+            function setKey(key) {
+                const now = new Date().getTime();
+
+                let date = new Date(now);
+                const item = {
+                    expiration: convertDateObject(date),
+                };
+
+                localStorage.setItem(key, JSON.stringify(item));
+            }
+
+            function updateKey(key) {
+                if (!compareDate) {
+                    localStorage.removeItem(key);
+                    setWithExpiry("pop-up");
+                }
+            }
+
+            function compareDate(key) {
+                const itemStr = localStorage.getItem(key);
+
+                // if the item doesn't exist, return null
+                if (!itemStr) {
+                    return null;
+                }
+                const now = new Date().getTime();
+                const date = new Date(now);
+
+                const curDate = convertDateObject(date);
+                const item = JSON.parse(itemStr);
+                return curDate === item.expiration;
+            }
+
+            if (compareDate("pop-up")) {
+                popup.classList.add("hidden");
+                overlay.classList.add("hidden");
+                body.classList.remove("stop-scrolling");
+            }
+
             // Close Popup
             const closeModal = function () {
                 popup.classList.add("hidden");
                 overlay.classList.add("hidden");
                 body.classList.remove("stop-scrolling");
+                setKey("pop-up");
+                updateKey("pop-up");
             };
 
             btnClosePopup.addEventListener("click", closeModal);

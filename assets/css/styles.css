@@ -332,7 +332,7 @@ button {
 .room__heading-wrap {
     text-align: center;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .room__heading {
@@ -368,8 +368,8 @@ button {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
-
     color: #000;
+    margin-top: 10px;
 }
 
 .room__item:hover {
@@ -422,14 +422,13 @@ button {
 }
 
 .room__sort-item-active {
-    font-weight: 600;
+    text-shadow: 0.9px 0px 0px black;
 }
 
 .row__item-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-top: 20px;
     border-radius: 5px;
     background: #00468b;

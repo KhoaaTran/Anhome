@@ -120,12 +120,12 @@
 }
 
 .room-list__top {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e0def5;
+    /* background: #e0def5; */
     padding: 15px 20px;
+    background: #a5def2;
 }
 
 .room-list-container + .room-list-container {
@@ -134,7 +134,8 @@
 
 .room-list__name {
     margin-bottom: 10px;
-    color: #241caf;
+    /* color: #241caf; */
+    color: #00468B;
 }
 
 .room-list__name strong {

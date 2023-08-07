@@ -1042,11 +1042,14 @@
             </figure>
         </div>
         <div class="overlay"></div>
+
         <script>
             const body = document.querySelector("body");
             const popup = document.querySelector(".pop-up-wrapper");
             const overlay = document.querySelector(".overlay");
             const btnClosePopup = document.querySelector(".pop-up-icon");
+            const room_sort = document.querySelector(".room__sort");
+            const sort_items = document.querySelectorAll(".room__sort-item");
 
             // Close Popup
             const closeModal = function () {
@@ -1061,6 +1064,20 @@
             window.onload = function () {
                 window.scrollTo(0, 0);
             };
+
+            // Sort
+            room_sort.addEventListener("click", function (e) {
+                const sort_item = e.target.closest(".room__sort-item");
+                if (sort_item) {
+                    sort_items.forEach((item) => {
+                        if (item.classList.contains("room__sort-item-active")) {
+                            item.classList.remove("room__sort-item-active");
+                        }
+                        return item;
+                    });
+                    sort_item.classList.add("room__sort-item-active");
+                }
+            });
         </script>
     </body>
 </html>

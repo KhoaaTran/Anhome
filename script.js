@@ -1,7 +1,6 @@
 const room_list = document.querySelector(".room-list");
 const body = document.body;
 const room_img = document.querySelectorAll(".room__img-wrap");
-// Disable scroll
 
 // Show detail room
 room_list.addEventListener("click", function (e) {

@@ -51,45 +51,42 @@ button {
     line-height: 1.14;
 }
 
-.disable-scroll {
-    overflow: hidden;
+.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Pop-up */
 .overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 2;
+    z-index: 999;
+}
+
+.pop-up-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 
 .pop-up-img-wrap {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    width: 100%;
 }
 
 .pop-up-img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.pop-up-checkbox + .overlay {
-    visibility: hidden;
-}
-
-.pop-up-checkbox:checked + .overlay {
-    visibility: visible;
-}
-
 .pop-up-icon {
-    position: relative;
-    top: -30px;
-    right: -10px;
-    font-size: 3rem;
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
 }

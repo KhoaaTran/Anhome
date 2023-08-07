@@ -74,10 +74,9 @@
         scale: 1;
     }
 
-    .pop-up-img {
-        width: 80%;
-        object-fit: cover;
-    }
+    .pop-up-wrapper {
+        min-width: 80%;
+    } 
 }
 
 /* Tablet */
@@ -187,4 +186,5 @@
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
+
 }

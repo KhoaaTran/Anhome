@@ -100,7 +100,7 @@
         <!-- Responsive -->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Script -->
-        <script defer src="./script.js"></script>
+        <!-- <script defer src="./script.js"></script> -->
         <title>An home</title>
     </head>
     <body>
@@ -169,29 +169,6 @@
                 </nav>
             </div>
         </header>
-
-        <div class="pop-up-wrapper">
-            <input
-                hidden
-                checked
-                type="checkbox"
-                name=""
-                id="pop-up-checkbox"
-                class="pop-up-checkbox"
-            />
-
-            <label for="pop-up-checkbox" class="overlay">
-                <figure class="pop-up-img-wrap">
-                    <img
-                        class="pop-up-img"
-                        src="./assets/icons/taitrococ.png"
-                        alt=""
-                    />
-
-                    <i class="pop-up-icon far fa-times-circle"></i>
-                </figure>
-            </label>
-        </div>
 
         <main class="main">
             <div class="fixed">
@@ -1052,5 +1029,32 @@
                 <p class="footer__copyright">Copyright 2023 © ANHOMEGROUP</p>
             </div>
         </footer>
+
+        <div class="pop-up-wrapper">
+            <figure class="pop-up-img-wrap">
+                <img
+                    class="pop-up-img"
+                    src="./assets/icons/taitrococ.png"
+                    alt=""
+                />
+
+                <i class="pop-up-icon far fa-times-circle"></i>
+            </figure>
+        </div>
+        <div class="overlay"></div>
+        <script>
+            const popup = document.querySelector(".pop-up-wrapper");
+
+            const overlay = document.querySelector(".overlay");
+            const btnClosePopup = document.querySelector(".pop-up-icon");
+
+            const closeModal = function () {
+                popup.classList.add("hidden");
+                overlay.classList.add("hidden");
+            };
+
+            btnClosePopup.addEventListener("click", closeModal);
+            overlay.addEventListener("click", closeModal);
+        </script>
     </body>
 </html>

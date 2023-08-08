@@ -46,7 +46,7 @@
         position: absolute;
         top: 40px;
         right: -8px;
-        min-width: 250px;
+        min-width: 165px;
         padding: 10px;
         border-radius: 3px;
         filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));

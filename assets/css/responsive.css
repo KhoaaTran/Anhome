@@ -77,6 +77,19 @@
     .pop-up-wrapper {
         min-width: 80%;
     } 
+
+    /* Room */
+    .room-list__overview {
+        flex-direction: column;
+    }
+
+    .info__heading {
+        font-size: 2rem;
+    }
+
+    .info__desc-wrap {
+        font-size: 1.8rem;
+    }
 }
 
 /* Tablet */

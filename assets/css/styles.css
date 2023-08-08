@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #00468b;
+    --secondary: #a5def2;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -43,8 +48,8 @@ button {
 .btn {
     padding: 16px 30px;
     border-radius: 8px;
-    background: #00468b;
-    border-color: #00468b;
+    background: var(--primary);
+    border-color: var(--primary);
     color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
@@ -104,7 +109,7 @@ button {
 
 /* Header */
 .header {
-    background: #00468b;
+    background: var(--primary);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -185,7 +190,7 @@ button {
     margin-top: 30px;
     background: #fff;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-    background: #a5def2;
+    background: var(--secondary);
 }
 
 .filter__search-text {
@@ -223,7 +228,7 @@ button {
     padding: 15px 20px;
     outline: none;
     border: none;
-    background: #00468b;
+    background: var(--primary);
 }
 
 /* Tutorial */
@@ -339,7 +344,7 @@ button {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #00468b;
+    color: var(--primary);
 }
 
 .room__sort-title {
@@ -431,7 +436,7 @@ button {
     align-items: center;
     margin-top: 20px;
     border-radius: 5px;
-    background: #00468b;
+    background: var(--primary);
     border: 1px solid #31c3e0;
     width: 100%;
 }

@@ -76,7 +76,7 @@
 
     .pop-up-wrapper {
         min-width: 80%;
-    } 
+    }
 
     /* Room */
     .room-list__overview {
@@ -96,21 +96,26 @@
 @media screen and (min-width: 576px) and (max-width: 991px) {
     /* Room */
     .room__list {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Info right */
-    .info__inner > * {
-        flex: 1;
+    .utility__list {
+        font-size: 1.4rem;
+        white-space: nowrap;
     }
 
     .hotline__number {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .media__list {
+        column-gap: 10px;
     }
 
     .media__item img {
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
         object-fit: cover;
     }
 
@@ -199,5 +204,4 @@
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
-
 }

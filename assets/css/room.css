@@ -119,6 +119,7 @@
 .room-list__top {
     display: flex;
     align-items: center;
+    column-gap: 10px;
     justify-content: space-between;
     padding: 15px 20px;
     background: var(--secondary);

@@ -254,6 +254,11 @@
 
 .room-list__detail-top {
     border-bottom: 1px solid #ccc;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.room-list__detail-bottom {
+    /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .room-list__detail-icon-v {

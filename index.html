@@ -1107,8 +1107,12 @@
             const popup = document.querySelector(".pop-up-wrapper");
             const overlay = document.querySelector(".overlay");
             const btnClosePopup = document.querySelector(".pop-up-icon");
+
             const room_sort = document.querySelector(".room__sort");
             const sort_items = document.querySelectorAll(".room__sort-item");
+
+            const page__control = document.querySelector(".room__control");
+            const pages_btn = document.querySelectorAll(".room__page-btn");
 
             // Convert Date Object
             function d2(n) {
@@ -1182,12 +1186,23 @@
                 const sort_item = e.target.closest(".room__sort-item");
                 if (sort_item) {
                     sort_items.forEach((item) => {
-                        if (item.classList.contains("room__sort-item-active")) {
-                            item.classList.remove("room__sort-item-active");
-                        }
+                        item.classList.remove("room__sort-item-active");
                         return item;
                     });
                     sort_item.classList.add("room__sort-item-active");
+                }
+            });
+
+            // Page
+            page__control.addEventListener("click", function (e) {
+                const currentPage = e.target.closest(".room__page-btn");
+                console.log(currentPage);
+                if (currentPage) {
+                    pages_btn.forEach((page) => {
+                        page.classList.remove("room__page-current");
+                        return page;
+                    });
+                    currentPage.classList.add("room__page-current");
                 }
             });
         </script>

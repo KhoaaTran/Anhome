@@ -18,6 +18,10 @@
     }
 
     /* Header */
+    .header__wrapper {
+        padding: 10px 0;
+    }
+
     .header__link {
         color: #333;
         font-weight: 600;

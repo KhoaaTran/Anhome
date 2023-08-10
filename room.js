@@ -44,3 +44,4 @@ nextImgBtn.addEventListener("click", function () {
 });
 
 
+

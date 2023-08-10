@@ -148,6 +148,10 @@ button {
     background: #fcb900;
 }
 
+.header__link.active {
+    background: #fcb900;
+}
+
 /* Main */
 .container-room {
     padding: 20px;

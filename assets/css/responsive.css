@@ -27,6 +27,28 @@
         font-weight: 600;
     }
 
+    /* Filter */
+    .filter {
+        margin-top: 30px;
+    }
+
+    .filter__form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 20px;
+    }
+
+    .filter__select {
+        width: 300px;
+        height: 40px;
+    }
+
+    .filter__form-item,
+    .filter__input {
+        width: 100%;
+    }
+
     /* Menu */
     .toggle-menu {
         padding-top: 10px;
@@ -108,6 +130,28 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Filter */
+    .filter {
+        margin-top: 30px;
+    }
+
+    .filter__form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 20px;
+    }
+
+    .filter__select {
+        width: 300px;
+        height: 40px;
+    }
+
+    .filter__form-item,
+    .filter__input {
+        width: 100%;
+    }
+
     /* Info right */
     .utility__list {
         font-size: 1.4rem;
@@ -141,28 +185,6 @@
         display: none;
     }
 
-    /* Filter */
-    .filter {
-        margin-top: 30px;
-    }
-
-    .filter__form {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        row-gap: 20px;
-    }
-
-    .filter__select {
-        width: 300px;
-        height: 40px;
-    }
-
-    .filter__form-item,
-    .filter__input {
-        width: 100%;
-    }
-
     /* IMG container */
     .room__img-wrap {
         flex: 1 0 100%;
@@ -184,7 +206,6 @@
 
     .book-heading {
         font-size: 1.8rem;
-        
     }
 
     /* Turtorial */

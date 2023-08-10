@@ -1,13 +1,13 @@
-const work_list = document.querySelector(".work-list");
+const job_list = document.querySelector(".job-list");
 const body = document.body;
 
-// Show detail work
-work_list.addEventListener("click", function (e) {
+// Show detail job
+job_list.addEventListener("click", function (e) {
     // e.preventDefault();
 
-    const parent = e.target.closest(".work-list__top");
+    const parent = e.target.closest(".job-list__top");
     if (parent) {
-        const openElement = parent.querySelector(".work-list__open");
+        const openElement = parent.querySelector(".job-list__open");
         openElement.classList.toggle("rotate-45deg");
 
         const bottomElement = parent.nextElementSibling;

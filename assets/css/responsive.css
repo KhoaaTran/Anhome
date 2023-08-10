@@ -94,6 +94,11 @@
     .info__desc-wrap {
         font-size: 1.8rem;
     }
+
+    .modal-book {
+        padding: 20px;
+        max-width: 50%;
+    }
 }
 
 /* Tablet */
@@ -170,6 +175,16 @@
     /* Left */
     .info__left {
         width: 100%;
+    }
+
+    .modal-book {
+        padding: 20px;
+        max-width: 80%;
+    }
+
+    .book-heading {
+        font-size: 1.8rem;
+        
     }
 
     /* Turtorial */

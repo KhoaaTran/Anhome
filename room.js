@@ -2,6 +2,11 @@ const room_list = document.querySelector(".room-list");
 const body = document.body;
 const room_img = document.querySelectorAll(".room__img-wrap");
 
+const book_modal = document.querySelector(".modal-book");
+const overlay = document.querySelector(".overlay");
+const book_btn = document.querySelector(".room-list__book");
+const close_modal = document.querySelector(".btn--close-modal");
+
 // Show detail room
 room_list.addEventListener("click", function (e) {
     e.preventDefault();
@@ -43,5 +48,25 @@ nextImgBtn.addEventListener("click", function () {
     });
 });
 
+// Book Modal
+const openModalBook = function (e) {
+    book_modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
 
+const closeModalBook = function () {
+    book_modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+};
+
+
+book_btn.addEventListener('click',openModalBook)
+overlay.addEventListener('click', closeModalBook)
+close_modal.addEventListener('click',closeModalBook)
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !book_modal.classList.contains('hidden')) {
+        closeModalBook();
+    }
+  });
 

@@ -98,7 +98,7 @@
 .info__desc {
     font-size: 1.7rem;
     margin-top: 10px;
-    list-style-type: square;
+    list-style-type: disc;
     list-style-position: inside;
 }
 
@@ -365,7 +365,7 @@
 }
 
 .utility-item {
-    list-style-type: square;
+    list-style-type: disc;
     list-style-position: inside;
 }
 

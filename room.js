@@ -9,7 +9,6 @@ const close_modal = document.querySelector(".btn--close-modal");
 
 // Show detail room
 room_list.addEventListener("click", function (e) {
-    e.preventDefault();
     const parent = e.target.closest(".room-list__top");
     if (parent) {
         const openElement = parent.querySelector(".room-list__open");
